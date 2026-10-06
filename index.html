@@ -25,8 +25,13 @@
   h3 { margin-top: 1.8em; margin-bottom: 0.4em; font-size: 16px; }
   ul { padding-left: 1.4em; }
   li { margin: 0.25em 0; }
+  ul ul { margin: 0.2em 0 0.7em; }
+  ul ul li { margin: 0.1em 0; }
   .when { color: #666; }
-  @media (prefers-color-scheme: dark) { .when { color: #999; } }
+  .note { margin-top: 2.5em; color: #666; font-size: 15px; }
+  @media (prefers-color-scheme: dark) {
+    .when, .note { color: #999; }
+  }
 </style>
 </head>
 
@@ -36,13 +41,93 @@
 
   Some things about me:
   <ul>
-    <li>Electrical engineer at <a href="https://www.boeing.com/commercial">Boeing Commercial Airplanes</a>, designing display hardware for the 777-8F</li>
+    <li>Electrical engineer at <a href="https://www.boeing.com/commercial">Boeing Commercial Airplanes</a>, designing hardware (mostly displays, some camera stuff, and other avionics components)</li>
     <li>Grew up in Rochester Hills, Michigan; live in Seattle now</li>
     <li>Studied electrical engineering at <a href="https://ece.osu.edu/">Ohio State</a> and the <a href="https://www.ece.uw.edu/">University of Washington</a></li>
     <li>Most of what I do is hardware: PCB design (<a href="https://www.kicad.org/">KiCad</a>, Altium), embedded C, analog and mixed-signal design</li>
-    <li>I build things I actually use — custom microcontroller boards, LED drivers, USB hubs, an NFC business card. Most of it ends up on <a href="https://github.com/tgulur">GitHub</a></li>
-    <li>Played soccer in college and still play whenever I can; I volunteer for local leagues</li>
-    <li>Volunteer for <a href="https://www.firstinspires.org/">FIRST Robotics</a> competitions, and a logistics chair for the Legends Dance Championship board at <a href="https://desidancenetwork.org/">Desi Dance Network</a></li>
+    <li>I (try to) build things I actually use — custom microcontroller boards, LED drivers, USB hubs, an NFC business card. Most of it ends up on <a href="https://github.com/tgulur">GitHub</a></li>
+    <li>Play soccer whenever I can; pretty fun sport</li>
+    <li>Volunteer for <a href="https://www.firstinspires.org/">FIRST Robotics</a> competitions, and used to be the logistics chair for the Legends Dance Championship board at <a href="https://desidancenetwork.org/">Desi Dance Network</a></li>
+  </ul>
+
+  Some things I believe:
+  <ul>
+    <li>Just do it, and then do more
+      <ul>
+        <li>The time spent arguing over who owns a task almost always exceeds the time the task would have taken</li>
+        <li>"That's not my scope" is actually a choice to avoid ownership</li>
+        <li>Take ownership, figure it out, do the damn job</li>
+      </ul>
+    </li>
+    <li>Just do cool things
+      <ul>
+        <li>"Cool" is a better filter than "strategic" &mdash; it tracks hard, useful, and not-done-yet all at once</li>
+        <li>Nobody remembers the safe project</li>
+        <li>If you can't explain why it's cool, you probably don't actually want to build it</li>
+      </ul>
+    </li>
+    <li>Make contact with reality as early as you can
+      <ul>
+        <li>A simulation is a hypothesis; a populated board is evidence</li>
+        <li>Almost everything I've gotten wrong was something I never modeled</li>
+        <li>Boards are cheap and fast now &mdash; there's rarely a good reason not to spin one</li>
+      </ul>
+    </li>
+    <li>Go wide before you go deep
+      <ul>
+        <li>The best idea usually comes from the field next door</li>
+        <li>Most "original" work is a transplant</li>
+        <li>Being a beginner on purpose keeps you honest</li>
+      </ul>
+    </li>
+    <li>Attention is the scarce input, not time
+      <ul>
+        <li>Four good hours beat twelve mediocre ones</li>
+        <li>Protect the mornings; everything else can move</li>
+        <li>Every notification is someone else's priority</li>
+      </ul>
+    </li>
+    <li>Write it down
+      <ul>
+        <li>Writing is how you find out what you actually think</li>
+        <li>A decision you can't explain in a paragraph isn't made yet</li>
+        <li>Your notes are a letter to someone who forgot everything: you, in two years</li>
+      </ul>
+    </li>
+    <li>Finishing is a separate skill from starting, and the rarer one
+      <ul>
+        <li>Starting is cheap. The last ten percent is where almost everyone quits</li>
+        <li>A finished mediocre thing teaches you more than an unfinished great one</li>
+        <li>Nothing is real until someone who isn't you has used it</li>
+      </ul>
+    </li>
+    <li>Put yourself where luck can find you
+      <ul>
+        <li>Luck scales with surface area</li>
+        <li>Say yes to anything cheap to try with an uncapped upside</li>
+        <li>Most of what went well for me traces back to something small I nearly skipped</li>
+      </ul>
+    </li>
+    <li>Prefer being corrected to being right
+      <ul>
+        <li>Wrong early is cheap; wrong late is expensive</li>
+        <li>Find the people who'll tell you the truth, then make it easy for them</li>
+        <li>If nobody is pushing back, you're in the wrong room</li>
+      </ul>
+    </li>
+    <li>Understand one layer below where you work
+      <ul>
+        <li>If you write firmware, read the schematic; if you draw schematics, know the physics</li>
+        <li>Abstractions are great until they leak, and they always leak</li>
+        <li>The bugs that cost weeks live at the boundaries between layers</li>
+      </ul>
+    </li>
+    <li>You don't really know something until you've taught it
+      <ul>
+        <li>An eight-year-old will ask the question your professor didn't</li>
+        <li>If you can't explain it simply, that's a problem with your model, not your vocabulary</li>
+      </ul>
+    </li>
   </ul>
 
   <h3>Work</h3>
@@ -68,6 +153,10 @@
     <li><a href="https://www.instagram.com/tejas_gulur/">Instagram</a></li>
     <li><a href="mailto:tgulur@gmail.com">tgulur@gmail.com</a></li>
   </ul>
+
+  <p class="note">Someday I would like to buy <a href="http://gulur.com">gulur.com</a> for my dad.
+  It has been parked by HugeDomains since 2013, priced as though my last name were a Fortune 500
+  company. Sorry Dad &mdash; for now you get a subdomain and my sincere best wishes.</p>
 
 </div>
 </body>
